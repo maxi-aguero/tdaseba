@@ -8,7 +8,8 @@ public class PilaConArreglo<E> implements Stack<E> {
 	private int size;
 	
 	
-	public PilaConArreglo(int MAX) {datos=(E[])new Object[MAX]; size=0;}
+	public PilaConArreglo(int MAX) {datos=(E[])new Object[MAX]; 
+	size=0;}
 	
 
 	public PilaConArreglo() {datos=(E[])new Object[5];size=0;}
