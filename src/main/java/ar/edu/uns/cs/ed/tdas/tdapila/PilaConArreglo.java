@@ -4,7 +4,7 @@ import ar.edu.uns.cs.ed.tdas.excepciones.EmptyStackException;
 
 public class PilaConArreglo<E> implements Stack<E> {
 
-	private E[] datos;
+	private E[] datos;//arreglo 
 	private int size;
 	
 	
