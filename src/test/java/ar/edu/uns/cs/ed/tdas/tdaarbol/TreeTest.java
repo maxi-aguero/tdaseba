@@ -12,8 +12,6 @@ import ar.edu.uns.cs.ed.tdas.tdacola.Queue;
 import ar.edu.uns.cs.ed.tdas.tdalista.PositionList;
 import ar.edu.uns.cs.ed.tdas.Position;
 import ar.edu.uns.cs.ed.tdas.excepciones.*;
-import ar.edu.uns.cs.ed.tdas.tdacola.*;
-import ar.edu.uns.cs.ed.tdas.tdalista.*;
 
 
 public class TreeTest {
@@ -25,7 +23,7 @@ public class TreeTest {
 	 */
 	private Tree<Integer> getTree() {
 		Tree<Integer> t = null;
-		//t = new Arbol<Integer>(); //TODO: Descomentar y crear instancia del TDA a testear
+		//t = new Arbol<Integer>(); 
 		return t;
 	}
 

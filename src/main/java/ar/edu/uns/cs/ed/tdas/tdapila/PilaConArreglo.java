@@ -7,11 +7,11 @@ public class PilaConArreglo<E> implements Stack<E> {
 	private E[] datos;//arreglo 
 	private int size;
 	
-	
+	@SuppressWarnings("unchecked")
 	public PilaConArreglo(int MAX) {datos=(E[])new Object[MAX]; 
 	size=0;}
 	
-
+	@SuppressWarnings("unchecked")
 	public PilaConArreglo() {datos=(E[])new Object[5];size=0;}
 		
 	public int size() {return size;}
@@ -22,7 +22,8 @@ public class PilaConArreglo<E> implements Stack<E> {
 		if (size==0) throw new EmptyStackException("top(): No se puede ver el tope de la pila vacia.");
 		return datos[size-1];		
 	}
-	
+
+	@SuppressWarnings("unchecked")
 	private E[] copy() {
 		    E[] toReturn=(E[]) new Object[datos.length*2];		    
 		    int i=0;
@@ -47,5 +48,20 @@ public class PilaConArreglo<E> implements Stack<E> {
 		datos[size]=null;		
 		return tope;		
 	}
+
+
+	/****
+	 * 
+	 * 
+	 *  PilaConArreglo<Integer> pila = new PilaConArreglo<Integer>();
+        pila.push(1);
+        pila.push(2);
+        pila.push(3);
+        System.out.println("Tamaño de la pila: " + pila.size());
+        System.out.println("Elemento en el tope: " + pila.top());
+        System.out.println("Desapilando: " + pila.pop());
+        System.out.println("Tamaño de la pila después de desapilar: " + pila.size());
+  
+	 */
 	
 }
